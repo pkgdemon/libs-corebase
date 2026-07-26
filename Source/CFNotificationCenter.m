@@ -24,6 +24,12 @@
    Boston, MA 02110-1301, USA.
 */
 
+#import <Foundation/NSNotification.h>
+#import <Foundation/NSDistributedNotificationCenter.h>
+#import <Foundation/NSString.h>
+#import <Foundation/NSDictionary.h>
+#import <Foundation/NSArray.h>
+
 #include "CoreFoundation/CFRuntime.h"
 #include "CoreFoundation/CFBase.h"
 #include "CoreFoundation/CFNotificationCenter.h"
@@ -33,10 +39,6 @@
 
 #include "GSPrivate.h"
 #include "GSObjCRuntime.h"
-
-#import <Foundation/NSNotification.h>
-#import <Foundation/NSDistributedNotificationCenter.h>
-#import <Foundation/NSString.h>
 #import <Foundation/NSDictionary.h>
 
 /* A record representing a single observer registration. */

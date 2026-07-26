@@ -47,7 +47,7 @@ typedef CF_ENUM(CFIndex, CFNotificationSuspensionBehavior) {
   CFNotificationSuspensionBehaviorDeliverImmediately = 4
 };
 
-CF_ENUM(CFOptionFlags) {
+enum {
   kCFNotificationDeliverImmediately = (1UL << 0),
   kCFNotificationPostToAllSessions = (1UL << 1)
 };

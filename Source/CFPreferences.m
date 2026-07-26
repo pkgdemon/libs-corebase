@@ -24,17 +24,18 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "CoreFoundation/CFBase.h"
-#include "CoreFoundation/CFPreferences.h"
-#include "CoreFoundation/CFString.h"
-
-#include "GSPrivate.h"
-
 #import <Foundation/NSUserDefaults.h>
 #import <Foundation/NSString.h>
 #import <Foundation/NSArray.h>
 #import <Foundation/NSDictionary.h>
 #import <Foundation/NSValue.h>
+
+#include "CoreFoundation/CFBase.h"
+#include "CoreFoundation/CFPreferences.h"
+#include "CoreFoundation/CFString.h"
+#include "CoreFoundation/CFNumber.h"
+
+#include "GSPrivate.h"
 
 CONST_STRING_DECL(kCFPreferencesAnyApplication,
   "kCFPreferencesAnyApplication");
