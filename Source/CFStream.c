@@ -36,7 +36,7 @@
 #include "CoreFoundation/CFString.h"
 #include "CoreFoundation/CFNumber.h"
 #include "CoreFoundation/CFError.h"
-#include "../Headers/CoreFoundation/CFStreamPriv.h"
+#include "CoreFoundation/CFStreamPriv.h"
 
 #ifndef _WIN32
 #	include <sys/types.h>
