@@ -38,6 +38,7 @@ libgnustep-corebase_C_FILES = \
   CFString.c \
   CFConstantString.c \
   CFStringEncoding.c \
+  CFStringTokenizer.c \
   CFStringUtilities.c \
   CFTimeZone.c \
   CFTree.c \
@@ -70,8 +71,10 @@ libgnustep-corebase_HEADER_FILES = \
   CFDictionary.h \
   CFError.h \
   CFLocale.h \
+  CFNotificationCenter.h \
   CFNumber.h \
   CFNumberFormatter.h \
+  CFPreferences.h \
   CFPropertyList.h \
   CFRunLoop.h \
   CFRuntime.h \
@@ -81,6 +84,7 @@ libgnustep-corebase_HEADER_FILES = \
   CFStreamPriv.h \
   CFString.h \
   CFStringEncodingExt.h \
+  CFStringTokenizer.h \
   CFTimeZone.h \
   CFTree.h \
   CFURL.h \
@@ -92,6 +96,8 @@ libgnustep-corebase_HEADER_FILES = \
 
 libgnustep-corebase_OBJC_FILES = \
   CFBundle.m \
+  CFNotificationCenter.m \
+  CFPreferences.m \
   NSCFArray.m \
   NSCFData.m \
   NSCFError.m \

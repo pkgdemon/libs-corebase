@@ -473,6 +473,7 @@ GS_PRIVATE void CFDateFormatterInitialize (void);
 GS_PRIVATE void CFDictionaryInitialize (void);
 GS_PRIVATE void CFErrorInitialize (void);
 GS_PRIVATE void CFLocaleInitialize (void);
+GS_PRIVATE void CFNotificationCenterInitialize (void);
 GS_PRIVATE void CFNullInitialize (void);
 GS_PRIVATE void CFNumberInitialize (void);
 GS_PRIVATE void CFNumberFormatterInitialize (void);
@@ -483,6 +484,7 @@ GS_PRIVATE void CFStreamInitialize (void);
 GS_PRIVATE void CFStringInitialize (void);
 GS_PRIVATE void CFConstantStringInitialize (void);
 GS_PRIVATE void CFStringEncodingInitialize (void);
+GS_PRIVATE void CFStringTokenizerInitialize (void);
 GS_PRIVATE void CFTimeZoneInitialize (void);
 GS_PRIVATE void CFTreeInitialize (void);
 GS_PRIVATE void CFURLInitialize (void);
@@ -536,12 +538,14 @@ CFInitialize (void)
   CFStringInitialize ();
   CFConstantStringInitialize (); /* must be after CFStringIntialize () */
   CFStringEncodingInitialize ();
+  CFStringTokenizerInitialize ();
   CFTimeZoneInitialize ();
   CFTreeInitialize ();
   CFURLInitialize ();
   CFUUIDInitialize ();
   CFXMLNodeInitialize ();
   CFRunLoopInitialize ();
+  CFNotificationCenterInitialize ();
 }
 
 #if defined(_MSC_VER)
